@@ -20,7 +20,7 @@ def init():
 def scrape_subreddit(reddit, name):
 
     subs = []
-    for submission in reddit.subreddit("MURICA").hot(limit=None):
+    for submission in reddit.subreddit(name).hot(limit=None):
         #print(submission.title)
         subs.append(submission)
     
